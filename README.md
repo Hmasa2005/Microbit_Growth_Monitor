@@ -15,7 +15,7 @@ In this project, I was responsible for **both the hardware setup on the Micro:bi
 ---
 
 ## 🎨 Leaf Color Logic
-![Leaf Image](leaf.png)<br>
+<img src="leaf.png" alt="Leaf Image" width="200"/>
 The leaf’s **brightness** and **saturation** are adjusted according to the Growth Index.
 
 | Growth Index | Appearance | Meaning |
