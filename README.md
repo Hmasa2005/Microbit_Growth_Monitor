@@ -1,16 +1,17 @@
 # Plant_Growth_Index
 # 🌱 Micro:bit Growth Monitor
 
-A Python desktop app that visualizes plant growth conditions in real time based on **temperature** and **light** data sent from a **Micro:bit**.  
-When the environment is ideal, the leaf appears **bright and vivid green**; when conditions worsen, it turns into a **darker, duller green** 🍃🌿
+This Python desktop application was developed as part of a **Sensing Engineering group project** to visualize plant growth conditions in real time.  
+It receives **temperature** and **light** data from a **Micro:bit**, calculates a **Growth Index**, and displays a dynamically color-changing leaf.  
+In this project, I was responsible for **both the hardware setup on the Micro:bit and the software program** that receives data, calculates the index, and updates the leaf display 🍃🌿
 
 ---
 
 ## 🧩 Overview
-- Receives `temperature` and `light` values via serial communication from a Micro:bit  
+- Reads `temperature` and `light` values from a Micro:bit via serial communication  
 - Calculates a **Growth Index (0–100)** representing plant growth conditions  
-- Displays real-time sensor data and a color-changing **leaf image** using Tkinter + Pillow  
-- Great for environmental sensing, IoT demos, or educational projects
+- Displays live readings and a dynamically changing **leaf image** using Tkinter + Pillow  
+- Developed as part of an educational group project in sensing engineering
 
 ---
 
@@ -23,9 +24,9 @@ The leaf’s **brightness** and **saturation** are adjusted according to the Gro
 | 40–79 | 🍃 Medium green | Moderate condition |
 | 0–39 | 🌲 Dark green | Poor condition |
 
-The app does **not** switch to red or brown.  
-Instead, it keeps the same green hue and varies only the **vividness and brightness**, resulting in a natural and realistic color transition.  
-Internally, this is achieved using Pillow’s `ImageEnhance.Color` and `ImageEnhance.Brightness` functions.
+The leaf does **not** turn red or brown.  
+Instead, the green hue remains constant while its **vividness and brightness** change, producing a natural, realistic visual effect.  
+This is implemented using Pillow’s `ImageEnhance.Color` and `ImageEnhance.Brightness`.
 
 ---
 
@@ -33,7 +34,7 @@ Internally, this is achieved using Pillow’s `ImageEnhance.Color` and `ImageEnh
 
 | Parameter | Description |
 |------------|-------------|
-| Temperature | Ideal: 25 °C (scored within 15–35 °C range) |
+| Temperature | Ideal: 25 °C (scored between 15–35 °C) |
 | Light | Ideal: 200 or higher (normalized to 1.0) |
 | Growth Index | Average of temperature and light scores × 100 |
 
