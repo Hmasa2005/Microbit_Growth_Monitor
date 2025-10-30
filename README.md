@@ -1,4 +1,3 @@
-# Plant_Growth_Index
 # 🌱 Micro:bit Growth Monitor
 
 This Python desktop application was developed as part of a **Sensing Engineering group project** to visualize plant growth conditions in real time.  
