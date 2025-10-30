@@ -1,5 +1,5 @@
 # 🌱 Micro:bit Growth Monitor
-![Leaf Image](software.png)<br>
+![Leaf Image](software_img.png)<br>
 This Python desktop application was developed as part of a **Sensing Engineering course group project** to visualize plant growth conditions in real time.  
 It receives **temperature** and **light** data from a **Micro:bit**, calculates a **Growth Index**, and displays a dynamically color-changing leaf.  
 In this project, I was responsible for **both the hardware setup on the Micro:bit and the software program** that receives data, calculates the index, and updates the leaf display 🍃🌿
